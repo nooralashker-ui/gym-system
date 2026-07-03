@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Noor Gym System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="loginPage" class="login-page">
+    <div class="login-box">
+      <h1>Noor Gym System 💗</h1>
+      <p>Private access only</p>
+
+      <input id="username" type="text" placeholder="Username">
+      <input id="password" type="password" placeholder="Password">
+
+      <button onclick="login()">Login</button>
+
+      <p id="loginError"></p>
+    </div>
+  </div>
+
+  <div id="app" class="hidden">
+    <header>
+      <h1>Hello Noor 💕</h1>
+      <button onclick="logout()">Logout</button>
+    </header>
+
+    <nav>
+      <button onclick="showDay('glutes')">Glutes</button>
+      <button onclick="showDay('upper')">Upper</button>
+      <button onclick="showDay('core')">Core</button>
+      <button onclick="showDay('stretching')">Stretching</button>
+    </nav>
+
+    <main id="workoutContainer"></main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
